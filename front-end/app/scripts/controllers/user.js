@@ -2,6 +2,7 @@
 
   fairMuse.controller('UserCtrl', function ($http) {
     $http.get('https://fast-meadow-84804.herokuapp.com/users');
+    
     var self = this;
 
     self.pay = function(){
