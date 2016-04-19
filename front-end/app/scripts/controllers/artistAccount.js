@@ -2,7 +2,7 @@ angular.module('fairMuseApp')
 .controller('ArtistAccountCtrl',function($http, flash) {
 var self = this;
 
-this.artistId = localStorage.getItem('artist_id')
+    this.artistId = localStorage.getItem('artist_id')
     this.artistName = localStorage.getItem('name')
 
    self.displayBalance = function(){
