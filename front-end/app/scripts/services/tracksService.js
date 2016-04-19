@@ -1,5 +1,5 @@
 'use strict';
 
 fairMuse.service('TracksService', function($resource) {
-	return $resource('http://localhost:3000/tracks');
+	return $resource('https://fast-meadow-84804.herokuapp.com/tracks');
 });

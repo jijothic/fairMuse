@@ -1,11 +1,11 @@
 'use strict';
 
   fairMuse.controller('UserCtrl', function ($http) {
-    $http.get('http://localhost:3000/users');
+    $http.get('https://fast-meadow-84804.herokuapp.com/users');
     var self = this;
 
     self.pay = function(){
-      $http.post('http://localhost:3000/api/payment', {user_id: localStorage.getItem('user_id')})
+      $http.post('https://fast-meadow-84804.herokuapp.com/api/payment', {user_id: localStorage.getItem('user_id')})
     }
 
     self.displayStreamDetails = function(){
@@ -14,7 +14,7 @@
         };
 
     self.getStreamDetails = function(){
-      return $http.post('http://localhost:3000/api/streaminfo', {user_id: localStorage.getItem('user_id')})
+      return $http.post('https://fast-meadow-84804.herokuapp.com/api/streaminfo', {user_id: localStorage.getItem('user_id')})
   };
 
   var success = function(response){

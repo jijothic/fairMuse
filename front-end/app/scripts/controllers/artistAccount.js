@@ -8,7 +8,7 @@ var self = this;
          };
 
      self.getBalance = function(){
-       return $http.post('http://localhost:3000/api/balanceinfo', {artist_id: localStorage.getItem('artist_id')})
+       return $http.post('https://fast-meadow-84804.herokuapp.com/api/balanceinfo', {artist_id: localStorage.getItem('artist_id')})
    };
 
    var balanceSuccess = function(response){

@@ -5,7 +5,7 @@ fairMuse.controller('UploadCtrl', ['Upload', '$timeout', '$location','$window', 
   var $window = $window
   this.uploadSong = function(file, picfile) {
     file.upload = Upload.upload({
-      url: 'http://localhost:3000/tracks',
+      url: 'https://fast-meadow-84804.herokuapp.com/tracks',
       data: {
         track: {
           name: this.trackName,
