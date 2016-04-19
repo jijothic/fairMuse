@@ -39,7 +39,7 @@ class ChargesController < ApplicationController
       currency: 'gbp')
       @amount ? @user.balance += @amount : @user.balance = SUBSCRIPTION_AMOUNT
 
-    redirect_to 'http://localhost:9000/#/success'
+    redirect_to 'https://fairmuse.herokuapp.com/'
   rescue Stripe::CardError => error
     flash[:error] = error.message
     redirect_to new_charge_path

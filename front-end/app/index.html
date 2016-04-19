@@ -5,8 +5,14 @@
     <title>FairMuse</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="styles/styles.css">
-
+     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.,app) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+     <link rel="stylesheet" href="styles/styles.css">
+    <!-- endbuild -->
   </head>
 
 
@@ -15,7 +21,6 @@
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
     <!-- Add your site or application content here -->
     <div ng-controller="PlayerCtrl as player" class="container-fluid">
       <div ng-view></div>
@@ -42,24 +47,26 @@
 
     <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script> -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
-    <script src="bower_components/angular-flash/angular-flash.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="bower_components/videogular/videogular.js"></script>
-    <script src="bower_components/videogular-controls/vg-controls.js"></script>
-    <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
-
-    <!-- endbower -->
+     <!-- build:js(./) scripts/vendor.js -->
+     <!-- bower:js -->
+     <script src="bower_components/jquery/dist/jquery.js"></script>
+     <script src="bower_components/angular/angular.js"></script>
+     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+     <script src="bower_components/angular-animate/angular-animate.js"></script>
+     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+     <script src="bower_components/angular-resource/angular-resource.js"></script>
+     <script src="bower_components/angular-route/angular-route.js"></script>
+     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+     <script src="bower_components/angular-touch/angular-touch.js"></script>
+     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+     <script src="bower_components/videogular/videogular.js"></script>
+     <script src="bower_components/videogular-controls/vg-controls.js"></script>
+     <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+     <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+     <script src="bower_components/angular-flash/angular-flash.js"></script>
+     <!-- endbower -->
     <!-- endbuild -->
-
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
@@ -78,7 +85,6 @@
         <script src="scripts/services/authenticationService.js"></script>
         <script src="scripts/services/streamTrackingService.js"></script>
         <script src="scripts/services/tracksService.js"></script>
-
         <!-- endbuild -->
 </body>
 </html>

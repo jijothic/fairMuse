@@ -40,6 +40,15 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "karma start test/karma.conf.js"
+    "test": "karma start test/karma.conf.js",
+    "postinstall": "node ./node_modules/bower/bin/bower install",
+    "prestart": "npm install",
+    "start": "node web.js",
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update"
+  },
+  "dependencies": {
+    "bower": "^1.7.7",
+    "express": "^4.13.4"
   }
 }
