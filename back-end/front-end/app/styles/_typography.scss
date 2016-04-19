@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Antic+Slab);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+$antic-slab: 'Antic Slab', serif;
+$font-stack: 'Open Sans', sans-serif;
+
+$title-color: #777;
+$dark-text-color: #555;
+$error-color: #ed0000;
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: $title-color;
+}
+
+html, body {
+  font-family: $font-stack;
+}
+
+p, span {
+  color: $dark-text-color;
+}
+
+.navbar-brand, #brand {
+  font-family: $antic-slab;
+}
+
+.error {
+  color: $error-color;
+}
+
+li.success, li.error {
+  text-align: center;
+  list-style: none;
+  color: $error-color;
+}
+
+.progress {
+  color: $title-color;
+  font-size: 20px;
+}
+
+input {
+  color: $dark-text-color;
+}
+
+.song_name {
+  font-family: "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+}

@@ -6,10 +6,10 @@
   <div>
     <flash:messages></flash:messages>
   </div>
-
   <div class='container'>
     <div class='row center-block'>
       <div ng-repeat='song in player.songList'>
+
         <div class='col-sm-4' ng-show="song.artist_id == artistAccount.artistId">
           <div class="track_container center-block"> <div class='song_name'> {{song.name}} </div><img class='img_click' ng-src='{{song.image}}'/></div>
         </div>
