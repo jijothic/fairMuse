@@ -5,7 +5,7 @@ fairMuse.controller('MyCarouselController', function () {
   this.myInterval = 5000;
   this.noWrapSlides = false;
   this.active = 0;
-  var pics = ["http://img.gawkerassets.com/img/17vzbduvh99gnjpg/original.jpg", "https://whileyouweresleeping.files.wordpress.com/2015/04/maxresdefault.jpg"]
+  var pics = ["http://img.gawkerassets.com/img/17vzbduvh99gnjpg/original.jpg", "https://www.ipglab.com/wp-content/uploads/2016/01/iStock_000075431881_Medium-940x529.jpg"]
 
   var slides = this.slides = [];
   var currIndex = 0;
